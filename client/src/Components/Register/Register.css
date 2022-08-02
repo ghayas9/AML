@@ -1,0 +1,105 @@
+.registerCompany_main{
+    padding-left: 4rem;
+    margin-top: 3rem;
+}
+.registerCompany_title{
+    text-transform: capitalize;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.registerCompany_subtitle{
+    padding-top: 10px;
+    color: black;
+    padding-left: 4px;
+    font-weight: 500;
+}
+.registerInputField_main{
+    padding-top: 3rem;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 2rem; */
+    /* background-color: coral; */
+    width: 20rem;
+}
+.firsTwo_inputFiled_main{
+    display: flex;
+    flex-direction: row;
+}
+.ComapnyLabel{
+    font-size: medium;
+    padding-bottom: 5px;
+}   
+.ContactNumberLabel{
+    font-size: medium;
+    padding-top: 5rem;
+    padding-bottom: 5px;
+}
+.inputFieldCss{
+    outline: none;
+    height: 3rem;
+    padding-left: 10px;
+    background-color: #FAFAFA;
+}
+.other_registerInputField_main{
+    margin-left: 8rem;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 2rem; */
+    /* background-color: coral; */
+    width: 20rem;
+}
+.btns_main{
+    display: flex;
+    flex-direction: row;
+}
+.CacnelBtn{
+    width: 20rem;
+    background-color: #2286CC;
+    margin-left: 1rem;
+    margin-top: 5rem;
+    height: 3rem;
+    color: white;
+    font-weight: 650;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.registerBtn{
+    width: 20rem;
+    background-color: #2286CC;
+    margin-left: 9rem;
+    margin-top: 5rem;
+    height: 3rem;
+    color: white;
+    font-weight: 650;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+}
+@media only screen and (max-width: 625px){
+    .firsTwo_inputFiled_main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .other_registerInputField_main{
+        margin-left: 0rem;
+    }
+    .btns_main{
+        display: flex;
+        flex-direction: column;
+    }
+    .registerBtn{
+        margin-left: 1rem;
+    }
+    .CacnelBtn{
+        margin-left: 1rem;
+    }
+}

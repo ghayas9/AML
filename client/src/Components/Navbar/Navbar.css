@@ -1,0 +1,66 @@
+.main_navbar{
+    height: 70px;
+    max-width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    /* background-color: coral; */
+    padding-left: 2rem;
+}
+.logo_title_main{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo_css{
+    height: 100%;
+    width: 100%;
+}
+.company_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.company_text{
+    color: #2286CC;
+    font-weight: 700;
+    font-size: x-large;
+}
+.name_text{
+    font-size: x-large;
+    color: #2286CC; 
+    padding-left: 10px;
+}
+.btns_main_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 4rem;
+}
+.register_btn_div{
+    background-color: #FFFFFF;
+    height: 2.5rem;
+    width: 7rem;
+    margin-right: 2rem;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2286CC;
+    border: 1px solid #2286CC;
+    font-weight: 500;
+    cursor: pointer;
+}
+.login_btn_div{
+    cursor: pointer;
+    background-color: #2286CC;
+    height: 2.5rem;
+    width: 7rem;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+}

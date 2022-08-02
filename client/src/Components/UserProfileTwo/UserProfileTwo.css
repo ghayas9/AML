@@ -1,0 +1,78 @@
+.user_profile_UserPRofile_main{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    /* background-color: #F4DCDC; */
+    background-color: #FFFFFF;
+    margin-left: 5rem;
+    margin-right: 3rem;
+    margin-top: -3.5rem;
+    padding-bottom: 10rem;
+    /* margin-bottom: 4rem; */
+    border: .001px solid lightgray;
+}
+.user_profile_User_profile_main{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+}
+.user_profile_UserNameAndPic{
+    display: flex;
+    flex-direction: column;
+}
+.user_profile_User_profileTitle{
+    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+    font-weight: 40
+}
+.user_profile_User_prifilePic_div{
+    display: flex;
+    /* background-color: cadetblue; */
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+}
+.user_profile_User_profilePicture_css{
+    height: 25vh;
+    width: 100%;
+}
+.user_profile_User_profileNameInfo{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    padding-top: 3.5rem;
+}
+.user_profile_User_user_name_css{
+    font-size: 1.9rem;
+    font-weight: 600;
+    padding-top: .5rem;   
+    font-family: Helvetica Neue;
+}
+.user_profile_User_genderAndDOB{
+    padding-top: 1rem;
+    display: flex;
+    color: #8D8D8D;
+    font-size: large;
+}
+.user_profile_User_infoType_css{
+    text-align: left;
+    font-size: 1.2rem;
+}
+.user_profile_User_details_css{
+    text-align: left;
+    font-size: 1.2rem;
+}
+.user_profile_User_details_status_css{
+    text-align: left;
+    font-size: 1.2rem;
+    padding-left: 3.7rem;
+}
+.user_profile_tick_with_status{
+    display: flex;
+    flex-direction: row;
+}
+.user_profile_tickMain{
+    padding-right: 2rem;
+}

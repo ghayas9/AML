@@ -1,0 +1,58 @@
+.popupinputFieldsFOrm{
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 2rem; */
+    /* background-color: coral; */
+    width: 25rem;
+}
+.popupnameLabel{
+    font-size: small;
+    padding-bottom: 10px;
+}
+.popupinput_css{
+    outline: none;
+    border: .1px solid lightgray;
+    height: 2.5rem;
+    padding-left: 10px;
+    background-color: white;
+}
+.popupGenderLabel{
+    font-size: small;
+    padding-top: 2rem;
+    padding-bottom: 10px;
+}
+.otherpopupinputFieldsFOrm{
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 2rem; */
+    /* background-color: coral; */
+    width: 25rem;
+    margin-left: 2rem;
+}
+.popupnameLabel_last{
+    font-size: small;
+    padding-top: 2rem;
+    padding-bottom: 10px;
+}
+.popupinput_css_last{
+    border: .1px solid lightgray;
+    outline: none;
+    height: 2.5rem;
+    width: 15.5rem;
+    padding-left: 10px;
+    background-color: white;
+}
+.SearchBtn{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: 17rem;
+    background-color: #2286CC;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    cursor: pointer;
+}

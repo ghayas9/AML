@@ -1,0 +1,10 @@
+.quicktablerow:nth-child(odd){
+    background-color: #F5F5F7 ;
+    cursor: pointer;
+
+}
+.quicktableeven:nth-child(even){
+    background-color: #F5F5F7;
+    cursor: pointer;
+
+}

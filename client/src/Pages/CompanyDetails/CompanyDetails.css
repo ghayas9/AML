@@ -1,0 +1,43 @@
+.tableClass{
+    /* background-color: coral; */
+    border-collapse: separate;
+    width: 100%;
+    max-width: 100%x;
+    /* margin-top: 3rem; */
+    margin: 2rem auto;
+    border-spacing: 0 15px;
+
+}
+.tableTH{
+    padding: 8px;
+    text-align: center;
+}
+.tableTD{
+    padding: 8px;
+    text-align: center;
+}
+/* table th, table td{
+    padding: 8px;
+    text-align: center;
+
+} */
+/* table td{
+    /* background-color: #F4DCDC; */
+    /* margin-top: 4rem; */
+    /* max-height: 4rem; */
+
+/* table tr:nth-child(even) {
+} */
+
+.tablerow:nth-child(odd){
+    background-color: #F4DCDC ;
+    cursor: pointer;
+
+}
+.tableeven:nth-child(even){
+    background-color: #D1F7B1;
+    cursor: pointer;
+}
+.prsofile_imge_css{
+    height: 4rem;
+}

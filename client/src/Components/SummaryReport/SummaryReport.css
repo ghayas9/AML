@@ -1,0 +1,51 @@
+.summary_report_main{
+    margin-left: 4rem;
+    margin-top: 3rem;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+.summaryReport_main_div{
+    background-color: #F5F5F7;
+    /* max-width: fit-content; */
+    padding: 5px 10px 5px 10px;
+}
+.summary_report_report_summary_div{
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 10px;
+}
+.summary_report_tr_main_div{
+    border-bottom: 1px solid grey;
+}
+.summary_report_tr_div{
+    font-size: 1.4rem;
+    font-weight: 600;
+
+}
+.summary_report_tr_result_div{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.summary_report_idCardWithImage_main{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+
+}
+.summary_report_SubmittedFIle_text{
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-top: 1rem;
+}
+.summary_report_image_Div{
+    margin-left: 1rem;
+    margin-top: 2rem;
+    background-color: #FFFFFF;
+    padding: 10px 20px 10px 20px;
+    max-width: 70%;
+    margin-bottom: 1rem;
+}
+.summary_report_idCardImage{
+    width: 100%;
+}

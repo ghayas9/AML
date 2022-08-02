@@ -1,0 +1,97 @@
+.registerCompanies_main_div{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+.RegisterCompaniesTitle{
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    font-weight: 400;
+}
+.companyList_main{
+    margin-top: 2rem;
+    /* background-color: coral; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.companyList_Header{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    /* background-color: aqua; */
+}
+.CompanyName_heading{
+    height: 3rem;
+    width: 34%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.Email_heading{
+    height: 3rem;
+    width: 34%;
+    /* background-color: burlywood; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}
+.Created_heading{
+    height: 3rem;
+    width: 34%;
+    /* background-color: yellowgreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.CompaniesList_main{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    background-color: #F5F5F7;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    /* background-color: aqua; */
+}
+.testCompany_div{
+    height: 4.5rem;
+    width: 34%;
+    background-color: #F5F5F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.email_id_div{
+    height: 4.5rem;
+    width: 34%;
+    background-color: #F5F5F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.createdAt_div{
+    height: 4.5rem;
+    width: 34%;
+    background-color: #F5F5F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,40 @@
+.two_ID_document_text{
+    padding-left: 5rem;
+    font-size: 1.5rem;
+    font-weight: 650;
+    margin-top: -7rem;
+    margin-bottom: 4rem;
+}
+.two_main_document_id_div{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-left: 4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-right: 3rem;
+    /* margin-top: 2rem; */
+    margin-bottom: 5rem;
+    padding-bottom: 5rem;
+    border: .001px solid lightgray;
+}
+.two_main_document_User_tbody{
+    padding-left: 10rem;
+
+}
+.two_main_document_User_infoType_css{
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.two_main_document_User_details_css{
+    display: flex;
+    flex-direction: row;
+}
+.two_main_document_User_details_status_css{
+    text-align: left;
+    font-size: 1.2rem;
+}
+.two_main_document_tickMain{
+    padding-right: 2rem;
+}

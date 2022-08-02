@@ -1,0 +1,22 @@
+._id_card_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.idCardImage_main_div{
+    width: 30vw;
+    /* background-color: coral; */
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 3rem;
+}
+.IDCard_image_css{
+    width: 100%;
+}
+.profile_picture_main_div{
+    width: 17vw;
+    padding-left: 20px;
+    /* background-color: cadetblue; */
+}
+.Profile_picture_image_css{
+    width: 100%;
+}

@@ -1,0 +1,65 @@
+.mainSearchResult{
+    max-width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F4DCDC;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 2rem;
+    padding-bottom: 10rem;
+    margin-bottom: 4rem;
+}
+.profile_main{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    /* padding-top: 1rem; */
+    /* background-color: cadetblue; */
+
+}
+.prifilePic_div{
+    display: flex;
+    /* background-color: cadetblue; */
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.profilePicture_css{
+    height: 25vh;
+    width: fit-content;
+}
+.profileNameInfo{
+    display: flex;
+    flex-direction: column;
+    padding-left: .8rem;
+}
+.profileTitle{
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.user_name_css{
+    font-size: 1.9rem;
+    font-weight: 600;
+    padding-top: .5rem;   
+    font-family: Helvetica Neue;
+}
+.genderAndDOB{
+    padding-top: 1rem;
+    display: flex;
+    color: #8D8D8D;
+    font-size: large;
+}
+.tbody{
+    background-color: #F4DCDC;
+}
+.infoType_css{
+    text-align: left;
+    font-size: 1.2rem;
+}
+.details_css{
+    text-align: left;
+    font-size: 1.2rem;
+}

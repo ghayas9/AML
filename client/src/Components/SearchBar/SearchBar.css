@@ -1,0 +1,35 @@
+.searchBar_main{
+    /* margin-top: 4rem; */
+    width: 100%;
+    /* background-color: coral; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search_main{
+    /* background-color: cadetblue; */
+    width: 30vw;
+    height: 6vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid grey;
+}
+.search_icon_css{
+    height: 50%;
+    width: 5%;
+    padding-left: 10px;
+}
+.searchInputfield{
+    height: 6vh;
+    width: 29vw;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.searchInputfield::placeholder{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
