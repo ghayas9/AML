@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../QuickDocumentScan/QuickDocumentScan.css';
 import QuickScanNavbar from '../QuickScanNavbar/QuickScanNavbar';
 import SearchBar from '../SearchBar/SearchBar';
@@ -9,54 +9,66 @@ import ProfileImage4 from "../../images/profile4.png";
 import ProfileImage5 from "../../images/profile5.png";
 import { useNavigate } from 'react-router-dom';
 
+
+import Loading from "../Loading/Loading";
+
+/////////////SET REDUX//////////////
+import { useDispatch } from 'react-redux';
+import * as actionCreator from "../../state/Action/action"
+import { bindActionCreators } from 'redux';
+///////////////SET REDUX//////////////
+
+//////////////GET REDUX//////////////
+import { useSelector } from 'react-redux';
+///////////////GET REDUX//////////////
+import axios from "../../config/axios";
+
 const QuickDocumentScan = () => {
+  
+  
+/////////////SET REDUX//////////////
+const dispatch = useDispatch()
+const action = bindActionCreators(actionCreator, dispatch)
+/////////////SET REDUX//////////////
 
+/////////////GET REDUX//////////////
+const state = useSelector((state) => state.LogIn)
+/////////////GET REDUX//////////////
+
+
+useEffect(()=>{
+  if(!state){
+    navigate('/login')
+  }else{
+    getData()
+  }
+},[state])
+
+const [load,setLoad]=useState(false)
+const [list ,setList]=useState([])
+const getData = async()=>{
+  try{
+    setLoad(true)
+
+    const res = await axios({
+      url:'company/scan',
+      method:'get',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${state.token}`
+    },
+    })
+    setList(res.data.data)
+    console.log(res.data.data);
+  }catch(err){
+    console.log(err);
+    action.ErrorMessage({title:'Error',txt:err.response.data.message})
+  }finally{
+    setLoad(false)
+  }
+  
+}
   const navigate = useNavigate()
-
-  const employeeDetails = [
-    {
-        profile:ProfileImage1,
-        empName:'Roni',
-        empSurname: 'Osla',
-        empGender: 'male',
-        empDOB: '13/6/1990',
-        empNationality: 'UK'
-    },
-    {
-        profile:ProfileImage2,
-        empName:'Roni',
-        empSurname: 'Osla',
-        empGender: 'male',
-        empDOB: '13/6/1990',
-        empNationality: 'UK'
-    },
-    {
-        profile:ProfileImage3,
-        empName:'Roni',
-        empSurname: 'Osla',
-        empGender: 'male',
-        empDOB: '13/6/1990',
-        empNationality: 'UK'
-    },
-    {
-        profile:ProfileImage4,
-        empName:'Roni',
-        empSurname: 'Osla',
-        empGender: 'male',
-        empDOB: '13/6/1990',
-        empNationality: 'UK'
-    },
-    {
-        profile:ProfileImage5,
-        empName:'Roni',
-        empSurname: 'Osla',
-        empGender: 'male',
-        empDOB: '13/6/1990',
-        empNationality: 'UK'
-    },
-  ];
-
-
 
   return (
     <div>
@@ -74,7 +86,7 @@ const QuickDocumentScan = () => {
             <tr>
               <th className='tableTH'>{''}</th>
               <th className='tableTH'>Name</th>
-              <th className='tableTH'>Surname</th>
+              <th className='tableTH'>Douc ID</th>
               <th className='tableTH'>Gender</th>
               <th className='tableTH'>Date Of Birth</th>
               <th className='tableTH'>Nationality</th>
@@ -82,19 +94,20 @@ const QuickDocumentScan = () => {
           </thead>
           <tbody>
             {
-              employeeDetails.map((item) => {
+              load?<Loading/>:
+              list.map((item,index) => {
                 return (
-                  <tr className="quicktablerow quicktableeven" onClick={() => navigate('/employeesdetails')}>
+                  <tr key={index} className="quicktablerow quicktableeven" onClick={() => navigate('/employeesdetails')}>
               <td className='tableTD'>
-                <img src={item.profile} alt="img" className="prsofile_imge_css" />
+                <img src={item.ScanData.outputface} alt="img" className="prsofile_imge_css" />
               </td>
               <td className='tableTD'>
-                <span>{item.empName}</span>
+                <span>{item.ScanData.result.fullName}</span>
               </td>
-              <td className='tableTD'>{item.empSurname}</td>
-              <td className='tableTD'>{item.empGender}</td>
-              <td className='tableTD'>{item.empDOB}</td>
-              <td className='tableTD'>{item.empNationality}</td>
+              <td className='tableTD'>{item.ScanData.result.documentNumber}</td>
+              <td className='tableTD'>{item.ScanData.result.sex}</td>
+              <td className='tableTD'>{item.ScanData.result.dob}</td>
+              <td className='tableTD'>{item.ScanData.result.nationality_full}</td>
             </tr>
                 )
               })

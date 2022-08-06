@@ -9,19 +9,26 @@ import QuickDocumentScanPage from "./Pages/QuickDocumentScanPage/QuickDocumentSc
 import QuickSearchResultPage from "./Pages/QuickSearchResultPage/QuickSearchResultPage";
 import EmployeeDetailsMainPage from "./Pages/EmployeeDetailsMainPage/EmployeeDetailsMainPage";
 import EmployeeDetailsMainTwo from './Pages/EmployeeDetailsMaintwo/EmployeeDetailsMaintwo';
-
+// import QuickSearchNavbar from "./Components/QuickSearchNavbar/QuickSearchNavbar";
+import ErrorMessage from './Components/Model/Error'
+import SuccessMessage from './Components/Model/Success'
 const App = () => {
 return(
   <div>
     <Router>
+      
+      <SuccessMessage/>
+      <ErrorMessage/>
       <Routes>
-        <Route path="/" element={<LoginPage />} />
+      {/* <Route path="/companydetails" element={<CompanyDetails />} /> */}
+      <Route path="/" element={<CompanyDetails />} />
+        <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<RegisterPage />} />
         <Route path="/registercompanies" element={<RegisterCompanies />} />
-        <Route path="/companydetails" element={<CompanyDetails />} />
+        
         <Route path="/quicksearch" element={<QuickNameSearchPage />} />
         <Route path="/quickscan" element={<QuickDocumentScanPage />} />
-        <Route path="/searchresult" element={<QuickSearchResultPage/>} />
+        <Route path="/searchresult/:id" element={<QuickSearchResultPage/>} />
         <Route path="/employeedetails" element={<EmployeeDetailsMainPage/>} />
         <Route path="/employeesdetails" element={<EmployeeDetailsMainTwo/>} />
       </Routes>

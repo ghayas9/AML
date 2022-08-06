@@ -7,7 +7,27 @@ import axios from '../../config/axios';
 import { useState } from 'react';
 //***************API*****************//
 
+/////////////SET REDUX//////////////
+import { useDispatch } from 'react-redux';
+import * as actionCreator from "../../state/Action/action"
+import { bindActionCreators } from 'redux';
+///////////////SET REDUX//////////////
+
+//////////////GET REDUX//////////////
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+///////////////GET REDUX//////////////
+
 const Login = () => {
+
+/////////////SET REDUX//////////////
+const dispatch = useDispatch()
+const action = bindActionCreators(actionCreator, dispatch)
+/////////////SET REDUX//////////////
+
+/////////////GET REDUX//////////////
+const state = useSelector((state) => state.LogIn)
+/////////////GET REDUX//////////////
 
 //***********API***************//
 const navigate = useNavigate()
@@ -15,6 +35,12 @@ const navigate = useNavigate()
 const [email,setEmail]=useState('')
 const [password,setPassword]=useState('')
 
+
+useEffect(()=>{
+    if (state) {
+        navigate('/')
+      }
+},[state])
 const LogIn = async()=>{
     console.log(email,password);
     try{
