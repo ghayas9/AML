@@ -32,8 +32,7 @@ const action = bindActionCreators(actionCreator, dispatch)
                 <img src={Logo} alt='logo' className="logo_css"  />
             </div>
             <div className='company_title'>
-                <text className='company_text'>Company</text>
-                <span className='name_text'>Name</span>
+                <text className='company_text'>AML</text>
             </div> 
         </div>
         <div className='btns_main_div'>
