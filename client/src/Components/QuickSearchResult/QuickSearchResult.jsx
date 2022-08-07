@@ -1,8 +1,5 @@
 import React, { useEffect } from "react";
-import RegisterCompaniesNavbar from "../RegisterCompaniesNavbar/RegisterCompaniesNavbar";
-import ProfilePicture from "../../images/profilepic.png";
 import "../QuickSearchResult/QuickSearchResult.css";
-import { Table } from "reactstrap";
 import { useNavigate, useParams } from "react-router-dom";
 
 import Loading from "../Loading/Loading";

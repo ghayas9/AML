@@ -3,6 +3,7 @@ import '../Login/Login.css';
 import { useNavigate } from "react-router-dom";
 
 //***************API*****************//
+import Loading from '../Loading/Loading';
 import axios from '../../config/axios';
 import { useState } from 'react';
 //***************API*****************//
@@ -31,7 +32,7 @@ const state = useSelector((state) => state.LogIn)
 
 //***********API***************//
 const navigate = useNavigate()
-
+const [load,setLoad]=useState(false)
 const [email,setEmail]=useState('')
 const [password,setPassword]=useState('')
 
@@ -42,19 +43,27 @@ useEffect(()=>{
       }
 },[state])
 const LogIn = async()=>{
-    console.log(email,password);
     try{
+        setLoad(true)
         const res = await axios({
             method:'post',
             url:'/company/login',
             data:{email,password}
           })
+          action.LogIn(res.data)
           console.log(res.data)
-          alert('login successfully')
-          navigate('/companydetails')
-        //   navigate('/registercompanies')
+          action.SuccessMessage({
+            title:'Success',
+            txt:'Successfully LogIned'
+          })
+          navigate('/')
     }catch(err){
-        alert(err.response.data.message)
+        action.ErrorMessage({
+            title:'Error',
+            txt:err.response.data.message
+        })
+    }finally{
+        setLoad(false)
     }
 }
 
@@ -63,7 +72,7 @@ const LogIn = async()=>{
     
     
   return (
-    <div className='loginMain'>
+    load?<Loading/>:<div className='loginMain'>
         <div className='AdminLogin__main'>
             <div className='AdminLoginTitle_div'>
                 Admin Login

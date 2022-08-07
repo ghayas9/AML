@@ -2,11 +2,6 @@ import React, { useEffect, useState } from 'react'
 import '../QuickDocumentScan/QuickDocumentScan.css';
 import QuickScanNavbar from '../QuickScanNavbar/QuickScanNavbar';
 import SearchBar from '../SearchBar/SearchBar';
-import ProfileImage1 from "../../images/profile1.png";
-import ProfileImage2 from "../../images/profile2.png";
-import ProfileImage3 from "../../images/profile3.png";
-import ProfileImage4 from "../../images/profile4.png";
-import ProfileImage5 from "../../images/profile5.png";
 import { useNavigate } from 'react-router-dom';
 
 
@@ -49,7 +44,7 @@ const [list ,setList]=useState([])
 const getData = async()=>{
   try{
     setLoad(true)
-
+          
     const res = await axios({
       url:'company/scan',
       method:'get',

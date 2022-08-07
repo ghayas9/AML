@@ -62,15 +62,6 @@ const QuickScanNavbar = () => {
       showPopup={showScanPopup}
       hidePopup={() => setShowScanPopup(false)}
       />
-    <div className="login_logo_title_main">
-      <div className="login_logo_main" onClick={() => navigate('/registercompanies')}>
-        <img src={Logo} alt="logo" className="login_logo_css" />
-      </div>
-      <div className="login_company_title">
-        <text className="login_company_text">Company</text>
-        <span className="login_name_text">Name</span>
-      </div>
-    </div>
     <div className="tabs_options">
       <Box
         sx={{
@@ -91,7 +82,7 @@ const QuickScanNavbar = () => {
               label="Email Verification"
               {...a11yProps(0)}
               sx={{ marginRight: "12rem", fontWeight: 600 }}
-              onClick={() => navigate('/companydetails')}
+              onClick={() => navigate('/')}
             />
             <Tab
               label="Quick Name Search"

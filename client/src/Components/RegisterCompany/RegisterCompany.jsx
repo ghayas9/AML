@@ -1,7 +1,5 @@
 import React from 'react'
 import '../RegisterCompany/RegisterCompany.css';
-import RegisterCompaniesNavbar from '../RegisterCompaniesNavbar/RegisterCompaniesNavbar';
-import { Table } from 'reactstrap';
 import { useNavigate } from 'react-router-dom';
 
 const RegisterCompany = () => {
@@ -63,9 +61,6 @@ const RegisterCompany = () => {
 
   return (
     <div>
-        <div>
-           <RegisterCompaniesNavbar/>
-        </div>
         <div className='registerCompanies_main_div'>
             <div className='RegisterCompaniesTitle'>
                 Register Companies

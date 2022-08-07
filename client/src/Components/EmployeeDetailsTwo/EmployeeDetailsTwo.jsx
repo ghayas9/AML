@@ -1,6 +1,5 @@
 import React from "react";
 import "../EmployeeDetailsTwo/EmployeeDetailsTwo.css";
-import RegisterCompaniesNavbar from "../RegisterCompaniesNavbar/RegisterCompaniesNavbar";
 import SummaryReport from "../SummaryReport/SummaryReport";
 import UserProfileTwo from "../UserProfileTwo/UserProfileTwo";
 import DocumentIDTwo from "../DocumentIDTwo/DocumentIDTwo";
@@ -11,9 +10,6 @@ import IdCard from "../IdCard/IdCard";
 const EmployeeDetailsTwo = () => {
   return (
     <div>
-      <div>
-        <RegisterCompaniesNavbar />
-      </div>
       <div
         style={{
           width: "100%",

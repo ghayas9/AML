@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import "../LoginNavbar/LoginNavbar.css";
 import { useNavigate } from "react-router-dom";
-import Logo from "../../images/logo.png";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -59,15 +58,6 @@ const LoginNavbar = () => {
         showPopup={showInvitePopup}
         hidePopup={() => setShowInvitePopup(false)}
       />
-      <div className="login_logo_title_main">
-        <div className="login_logo_main" onClick={() => navigate('/registercompanies')}>
-          <img src={Logo} alt="logo" className="login_logo_css" />
-        </div>
-        <div className="login_company_title">
-          <text className="login_company_text">Company</text>
-          <span className="login_name_text">Name</span>
-        </div>
-      </div>
       <div className="tabs_options">
         <Box
           sx={{
@@ -88,7 +78,7 @@ const LoginNavbar = () => {
                 label="Email Verification"
                 {...a11yProps(0)}
                 sx={{ marginRight: "12rem", fontWeight: 600 }}
-                onClick={() => navigate('/companydetails')}
+                onClick={() => navigate('/')}
               />
               <Tab
                 label="Quick Name Search"

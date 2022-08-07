@@ -44,6 +44,7 @@ const LogIn = (state = init , action) =>{
                 return state
             }
        }
+       console.log(state);
         return state
     }
 }

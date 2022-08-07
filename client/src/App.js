@@ -12,6 +12,7 @@ import EmployeeDetailsMainTwo from './Pages/EmployeeDetailsMaintwo/EmployeeDetai
 // import QuickSearchNavbar from "./Components/QuickSearchNavbar/QuickSearchNavbar";
 import ErrorMessage from './Components/Model/Error'
 import SuccessMessage from './Components/Model/Success'
+import Navbar from "./Components/Navbar/Navbar";
 const App = () => {
 return(
   <div>
@@ -19,6 +20,7 @@ return(
       
       <SuccessMessage/>
       <ErrorMessage/>
+      <Navbar/>
       <Routes>
       {/* <Route path="/companydetails" element={<CompanyDetails />} /> */}
       <Route path="/" element={<CompanyDetails />} />

@@ -9,7 +9,38 @@ import ProfileImage4 from "../../images/profile4.png";
 import ProfileImage5 from "../../images/profile5.png";
 import Table from "../../Components/Table/Table";
 
+
+/////////////SET REDUX//////////////
+import { useDispatch } from 'react-redux';
+import * as actionCreator from "../../state/Action/action"
+import { bindActionCreators } from 'redux';
+///////////////SET REDUX//////////////
+
+//////////////GET REDUX//////////////
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
+///////////////GET REDUX//////////////
+
 const CompanyDetails = () => {
+
+  /////////////SET REDUX//////////////
+const dispatch = useDispatch()
+const action = bindActionCreators(actionCreator, dispatch)
+/////////////SET REDUX//////////////
+
+/////////////GET REDUX//////////////
+const state = useSelector((state) => state.LogIn)
+/////////////GET REDUX//////////////
+
+const navigate = useNavigate()
+  useEffect(()=>{
+    if(!state){
+      navigate('/login')
+    }else{
+      console.log('logined');
+    }
+  },[state])
   const companyEmployees = [
     {
       profile: ProfileImage1,
