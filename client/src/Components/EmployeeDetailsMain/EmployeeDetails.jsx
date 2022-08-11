@@ -1,6 +1,5 @@
 import React from "react";
 import "../EmployeeDetailsMain/EmployeeDetails.css";
-import Navbar from "../Navbar/Navbar";
 import CriminalRecord from "../Criminal Record/CriminalRecord";
 import UserProfile from "../UserProfile/UserProfile";
 import DocumentID from "../DocumentID/DocumentID";

@@ -1,0 +1,71 @@
+.Companyverification_main{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    /* background-color: cadetblue; */
+    max-height: 100%;   
+    flex-direction: column;
+    align-items: center;
+}
+.Company_verification_logo_title_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    max-width: 30vw;
+    /* background-color: coral; */
+}
+.image_logo_css{
+    height: 70%;
+}
+.COmpanyTag{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(37, 58, 58);
+    text-transform: uppercase;
+}
+.NameTag{
+    font-size: 1.5rem;
+    color: rgb(37, 58, 58);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.subTitle_text{
+    max-width: 60vw;
+    /* background-color: cadetblue; */
+    font-size: x-large;
+    font-weight: 450;
+    color: rgb(37, 58, 58);
+}
+.Identify_verification_btn_main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    /* background-color: coral; */
+}
+.identifyVerification_btn{
+    height: 2.5rem;
+    width: 10rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: unset;
+    background-color: #0057DC;
+}
+.Why_needed_main{
+    max-width: 60vw;
+}
+.whyNeeded_text{
+    font-size: x-large;
+    color: rgb(37, 58, 58);
+
+}   
+.whyNeeded_description{
+    color: rgb(37, 58, 58);
+    font-size: large;
+
+}

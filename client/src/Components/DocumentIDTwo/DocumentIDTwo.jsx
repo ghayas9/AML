@@ -1,6 +1,5 @@
 import React from 'react'
 import '../DocumentIDTwo/DocumentIDTwo.css';
-import ProfilePicture from "../../images/profilepic.png";
 import TickIcon from "../../images/tick.png";
 
 

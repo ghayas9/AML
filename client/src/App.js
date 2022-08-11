@@ -9,6 +9,8 @@ import QuickDocumentScanPage from "./Pages/QuickDocumentScanPage/QuickDocumentSc
 import QuickSearchResultPage from "./Pages/QuickSearchResultPage/QuickSearchResultPage";
 import EmployeeDetailsMainPage from "./Pages/EmployeeDetailsMainPage/EmployeeDetailsMainPage";
 import EmployeeDetailsMainTwo from './Pages/EmployeeDetailsMaintwo/EmployeeDetailsMaintwo';
+import EmailVerification from './Components/GlobalComplianceMain/GlobalComplianceMain'
+import Multiselectform from './Components/MultiSelectForm/MultiSelectForm'
 // import QuickSearchNavbar from "./Components/QuickSearchNavbar/QuickSearchNavbar";
 import ErrorMessage from './Components/Model/Error'
 import SuccessMessage from './Components/Model/Success'
@@ -33,6 +35,12 @@ return(
         <Route path="/searchresult/:id" element={<QuickSearchResultPage/>} />
         <Route path="/employeedetails" element={<EmployeeDetailsMainPage/>} />
         <Route path="/employeesdetails" element={<EmployeeDetailsMainTwo/>} />
+
+        <Route path="/emailverification/:id" element={<EmailVerification/>} />
+        <Route path="/multiselectform" element={<Multiselectform/>} />
+
+
+
       </Routes>
     </Router>
   </div>

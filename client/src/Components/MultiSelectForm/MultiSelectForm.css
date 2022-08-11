@@ -1,0 +1,846 @@
+.multiSelectForm__main {
+  overflow-x: scroll;
+  overflow-y: scroll;
+  margin-bottom: 3rem;
+}
+.multiSelectForm__main::-webkit-scrollbar {
+  display: none;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 2.5rem;
+}
+.one_Company_verification_logo_title_main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.image_logo_css {
+  width: 20%;
+}
+.welcome_main {
+  /* background-color: cadetblue; */
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome_title {
+  width: 50vw;
+  /* background-color: chartreuse; */
+  font-size: x-large;
+  font-weight: 600;
+}
+.welcome_subTitle {
+  width: 50vw;
+  /* background-color: brown; */
+  font-size: medium;
+  font-weight: 500;
+  padding-top: 0.6rem;
+}
+.points_main_with_pic {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+}
+.points_first_main {
+  display: flex;
+  flex-direction: column;
+  /* background-color: coral; */
+}
+.point_heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 0rem;
+}
+.tickMain_css {
+  width: 10;
+  height: 10;
+  padding: 2px;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tick_className {
+  height: 50%;
+}
+.heading_text {
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+.points_second_main {
+  /* max-width: 20%; */
+  /* background-color: aliceblue; */
+  margin-left: 2rem;
+  display: flex;
+  /* align-items: flex-end; */
+}
+.image_2nd_welcome {
+  width: 100%;
+  height: 80%;
+}
+.btns_main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 4rem;
+}
+.back_with_backIcon_main {
+  display: flex;
+  align-items: center;
+  color: #669fc6;
+  padding: 15px;
+  cursor: pointer;
+}
+.start_verification_btn {
+  background-color: #005ada;
+  width: 25vw;
+  height: 3rem;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+.identity_check_main {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+.identity_check_title {
+  width: 50vw;
+  /* background-color: chartreuse; */
+  font-size: x-large;
+  font-weight: 700;
+}
+.identity_check_subTitle {
+  width: 50vw;
+  /* background-color: brown; */
+  font-size: medium;
+  font-weight: 500;
+  padding-top: 0.9rem;
+}
+.recording_instructions_main {
+  background-color: #f5f7fa;
+  width: 50vw;
+  margin-top: 2.5rem;
+  padding: 25px 25px 25px 30px;
+  border: 0.4px solid lightgray;
+  border-radius: 5px;
+}
+.instruction_with_icon_main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.icon_img_className {
+  width: max-content;
+  padding: 3px;
+  border-radius: 50%;
+  border: 3px solid #1acb7d;
+  display: flex;
+  align-items: center;
+}
+.not_allowed_icon_img_className {
+  padding: 5px;
+  border-radius: 50%;
+}
+.identity_check_btns_main {
+  margin-top: 1rem;
+  max-width: 100vw;
+  display: flex;
+  /* background-color: coral; */
+  align-items: flex-start;
+}
+.identity_check_btns_main_second{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 53vw;
+}
+.back_with_backIcon_main_second{
+    display: flex;
+  align-items: center;
+  color: #669fc6;
+  padding: 15px;
+  cursor: pointer;
+}
+.identity_check_start_verification_btn {
+  background-color: #005ada;
+  width: 46vw;
+  padding: 1rem;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+.recordingScreen_main {
+  background-color: #f5f7fa;
+  width: 50vw;
+  margin-top: 2.5rem;
+  padding: 25px 25px 25px 30px;
+  border: 0.4px solid lightgray;
+  border-radius: 5px;
+}
+.gifMain {
+  height: 20vh;
+  /* width: 15vw; */
+  display: flex;
+  flex-direction: row;
+  /* background-color: #1ACB7D; */
+}
+.gif_css {
+  height: 100%;
+  width: 30%;
+}
+.vid_headings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.vidHeading_options {
+  padding-left: 1rem;
+}
+.number_one {
+  color: black;
+  font-weight: bold;
+}
+.Vid_recording_main {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.start_video_recording_main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 25vh;
+  width: 12vw;
+  border-radius: 10px;
+  border: 1px dashed #0067f8;
+  background-color: #f2f2f2;
+  border-width: 1;
+  /* border: 1px solid #0067f8; */
+  cursor: pointer;
+}
+.start_video_recording_icon {
+  border-radius: 50%;
+  background-color: #0067f8;
+  padding: 1.5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.start_video_recording_text {
+  max-lines: 1;
+  max-width: 5rem;
+  color: #0067f8;
+  text-align: center;
+  font-weight: 500;
+}
+.upload_vid_main {
+  display: flex;
+  flex-direction: row;
+  width: 53vw;
+  margin-top: 1rem;
+  /* background-color: chartreuse; */
+}
+.mp4File_css[type="file"] {
+  display: none;
+}
+.upload_vid_btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.7rem;
+  color: #005ada;
+  font-weight: 700;
+  border: 0.5px solid lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.supported_formats {
+  color: gray;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  font-size: 15px;
+}
+
+.dropDown_With_label {
+  display: flex;
+  /* justify-content: center;    */
+  padding-top: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+.document_country {
+  width: 50vw;
+  font-size: small;
+  padding-top: 0.9rem;
+  font-weight: 500;
+  color: gray;
+}
+.dropdown {
+  padding-top: 5px;
+  width: 20vw;
+  margin-right: 30%;
+}
+.Document_type_main {
+    margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.document_type_title {
+  margin-top: 2rem;
+  width: 50vw;
+  color: gray;
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: 500;
+}
+.Type_main {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+  border: 1px solid grey;
+  cursor: pointer;
+  /* background-color: cadetblue; */
+}
+.Type_main:hover {
+  border: 1px solid #0067f8;
+}
+.globe_main {
+  padding: 1rem;
+  background-color: #0067f8;
+  color: white;
+}
+.text_between_main {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-weight: 500;
+  width: 42vw;
+}
+.Forward_icon_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.forward_icon_div {
+  /* background-color: coral; */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  border: 2px solid grey;
+  color: grey;
+  cursor: pointer;
+}
+.forward_icon_div:hover {
+  border: 2px solid #0067f8;
+  color: #0067f8;
+}
+.ArticleIcon_main{
+    padding: 1rem;
+  background-color: #C2C2C2;
+  color: white;
+}
+.Credit_score_Type_main{
+    margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+  border: 1px solid grey;
+  cursor: pointer;
+  /* background-color: cadetblue; */
+}
+.Article_Type_main{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    border: 1px solid grey;
+  cursor: pointer;
+
+}
+.Passport_view_main{
+    background-color: #f5f7fa;
+  width: 46vw;
+  margin-top: 2.5rem;
+  padding: 25px 25px 25px 30px;
+  border: 0.4px solid lightgray;
+  border-radius: 5px;
+}
+.Passport_start_video_recording_text{
+    max-lines: 1;
+  /* max-width: 5rem; */
+  color: #0067f8;
+  text-align: center;
+  font-weight: 500;
+}
+.Passport_upload_vid_main{
+    display: flex;
+    flex-direction: row;
+    width: 49.5vw;
+    margin-top: 1rem;
+}
+.passport_btns_main{
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+}
+.passport_back_with_backIcon_main{
+    display: flex;
+    align-items: center;
+    color: #669fc6;
+    padding: 15px;
+    cursor: pointer;
+}
+.Passport_next_step_btn{
+    background-color: #005ada;
+    width: 43vw;
+    padding: 1rem;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+.personalDetails_title{
+    display: flex;
+    flex-direction: row;
+
+}
+.personalDetails_title_div{
+    padding-top: 1rem;
+    width: 8vw;
+    /* background-color: cadetblue; */
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+}
+.personal_details_line{
+    width: 42vw;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 8px;
+}
+.radio_btn_with_input_field{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+    /* background-color: cadetblue; */
+    width: 50vw;
+}
+.Radio_buttons_main{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+.radio_label_title{
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: 500;
+    color: gray;
+    padding-bottom: 10px;
+}
+.input_filed_main{
+    width: 22vw;
+    /* height: max-content; */
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+.label_DOB{
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: 500;
+    color: gray;
+    padding-bottom: 5px;
+}
+.calender_div{
+    height: 2.8rem;
+    outline: none;
+    border: none;
+    /* border: 1px solid lightgray; */
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.input_field_csss{
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 25vw;
+    /* height: 3rem; */
+    outline: none;
+    border: .2px solid lightgray;
+    border-radius: 5px;
+    color: grey;
+    font-size: large;
+}
+.input_field_csss:hover{
+    border: 1px solid black;
+}
+.second_input_main{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    justify-content: space-between;
+    /* background-color: cadetblue; */
+}
+.one_input_main{
+    display: flex;
+    flex-direction: column;
+    width: 22vw;
+
+}
+.Label_css_for_all{
+    color: grey;
+    font-size: small;
+    font-weight: 500;
+    padding-bottom: 5px;
+    
+}
+.Input_css_for_All{
+    padding-left: 10px;
+    height: 2.8rem;
+    /* width: 20vw; */
+    font-size: medium;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+.Input_css_for_All:hover{
+    border: 1px solid black;
+}
+.another_input_main{
+    width: 22vw;
+    display: flex;
+    flex-direction: column;
+}
+.third_input_main{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    justify-content: space-between;
+}
+.Label_css_for_all_Citizen{
+    color: grey;
+    font-size: small;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.citizenship_dropdown{
+    padding-right: 22px;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 1rem;
+    width: 22vw;
+    margin-right: 30%;
+    outline: none;
+    color: gray;
+    border: 1px solid lightgray;
+}
+.citizenship_dropdown:hover{
+    border: 1px solid black;
+}
+.Your_citizenship{
+    color: gray;
+    font-size: 1rem;
+}
+.both_btns_main{
+    margin-top: 3rem;
+    max-width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    width: 50vw;
+}
+.back_back_with_backIcon_main{
+    display: flex;
+    align-items: center;
+    color: #669fc6;
+    padding: 15px;
+    cursor: pointer;
+}
+.input_filed_next_step_btn{
+    background-color: #005ada;
+    width: 46vw;
+    padding: 1rem;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+.confirm_details_instructions_main{
+    background-color: #f5f7fa;
+  width: 46vw;
+  margin-top: 2.5rem;
+  padding: 40px 25px 25px 30px;
+  border: 0.4px solid lightgray;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.full_one_instruction_main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.icon_full_one_instruction{
+    border-radius: 50%;
+    border: 3px solid #1acb7d;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text_full_instruction_main{
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+.icon_below_full_one_instruction{
+    border-radius: 50%;
+    border: 3px solid #F85151;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.last_one_instruction_main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;   
+}
+.Last_one_both_btns_main{
+    margin-top: 1rem;
+    max-width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    width: 50vw;
+}
+.confirm_details_personalDetails_title{
+    display: flex;
+    flex-direction: row;
+}
+.confirm_details_personalDetails_title_div{
+    padding-top: 1rem;
+    width: 5vw;
+    /* background-color: cadetblue; */
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+}
+.confirm_detials_personal_details_line{
+    width: 45vw;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 8px;
+}
+.upload_address_main{
+    display: flex;
+  flex-direction: row;
+  width: 50vw;
+  margin-top: 2rem;
+}
+.upload_address_btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.7rem;
+    color: #005ada;
+    font-weight: 700;
+    border: 0.5px solid lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.addressFile_css[type="file"] {
+    display: none;
+  }
+  .verify_passport_address_main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    /* background-color: cadetblue; */
+    width: 50vw;
+    
+  }
+.verify_passport_main{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    /* background-color: coral; */
+}
+.verify_Information_title{
+    color: black;
+    font-size: medium;
+    font-weight: 500;
+}
+.uploaded_passport_picture{
+    width: 22vw;
+    padding-top: 2rem;
+    /* background-color: aqua; */
+}
+.verified_passport_uploaded_image{
+    height: fit-content;
+    width: 100%;
+}
+.verify_address_info_main{
+    display: flex;
+    flex-direction: column;   
+}
+.uploaded_address_image_div{
+    margin-top: 2rem;
+    width:10vw;
+    height: 16vh;
+    /* background-color: aqua; */
+    border-radius: 50%;
+}
+.uploaded_address_image_css{
+    height: 70%;
+    width: 70%;
+    /* border-radius: 50%; */
+}
+.Reupload_btns_and_instructions_main{
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    margin-top: 2rem;
+}
+.Reupload_btn_main{
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .7rem;
+    color: #005ada;
+    font-weight: 700;
+    border: 0.5px solid lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.reupload_instructions{
+    display: flex;
+    background-color: #eff3f8;
+    margin-left: 10px;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+.Uploading_your_files_main{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+.uploading_your_files_title{
+    font-size: 2rem;
+    font-weight: 600;
+    width: 50vw;
+    padding-bottom: 1.5rem;
+}
+.uploading_files_instruction{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin-top: 1rem;
+}
+.icon_with_text{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
+}
+.submitted_last_screen{
+    display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  flex-direction: row;
+  align-items: center;
+}
+.thank_you_div{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    /* background-color: cadetblue; */
+}  
+.tick_with_thanks_title{
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 450;
+}
+.tick_icon{
+    background-color: #1ACB7D;
+    padding: .6rem;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+.thank_you_description{
+    padding-top: 2rem;
+    /* background-color: coral; */
+    color: darkslategray;
+    font-size: 17px;
+    line-height: 25px;
+}
+.done_btn{
+    margin-top: 1rem;
+    width: 24vw;
+    background-color: #0067f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: large;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.last_screen_image{
+    width: 24vw;
+    height: max-content;
+    padding-left: 2rem;
+}
+.Welcome_Image_css{
+    width: 50%;
+}
