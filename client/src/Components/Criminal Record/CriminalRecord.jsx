@@ -2,7 +2,7 @@ import React from "react";
 import "../Criminal Record/CriminalRecord.css";
 import IDcardImage from "../../images/idcard.png";
 
-const CriminalRecord = () => {
+const CriminalRecord = ({img}) => {
   return (
     <div className="criminal_record_main">
       <div className="criminal_record_div">Criminal Record</div>
@@ -47,7 +47,7 @@ const CriminalRecord = () => {
         <div className="idCardWithImage_main">
           <div className="SubmittedFIle_text">Submitted File</div>
           <div className="image_Div">
-            <img src={IDcardImage} alt="image" className="idCardImage" />
+            <img src={img} alt="image" className="idCardImage" />
           </div>
         </div>
       </div>

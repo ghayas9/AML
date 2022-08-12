@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../UserProfile/UserProfile.css";
-import ProfilePicture from "../../images/profilepic.png";
+
 import TickIcon from "../../images/tick.png";
 
-const UserProfile = () => {
+const UserProfile = (p) => {
+  const {data ,img } = p
+  useEffect(()=>{
+    console.log(p);
+    
+  },[])
   return (
     <div className="UserPRofile_main">
       <div className="User_profile_main">
@@ -11,17 +16,17 @@ const UserProfile = () => {
           <div className="User_profileTitle">User Profile</div>
           <div className="User_prifilePic_div">
             <img
-              src={ProfilePicture}
+              src={img}
               alt="image"
               className="User_profilePicture_css"
             />
           </div>
         </div>
         <div className="User_profileNameInfo">
-          <div className="User_user_name_css">Roni Oslo</div>
+          <div className="User_user_name_css">{data.name}</div>
           <div className="User_genderAndDOB">
-            <div>Male</div>
-            <div>{","}1990-3-25</div>
+            <div>{data.gender}</div>
+            <div>{","}{data.dob}</div>
           </div>
         </div>
       </div>
@@ -40,7 +45,8 @@ const UserProfile = () => {
           size="lg"
         >
           <tbody className="User_tbody">
-            <tr
+
+          <tr
               style={{
                 padding: 5,
                 height: 40,
@@ -58,7 +64,12 @@ const UserProfile = () => {
                 <div className="User_details_status_css">Status</div>
               </td>
             </tr>
-            <tr
+            
+
+            {
+              Object.keys(data).map(key=>{
+                return (
+                  <tr
               style={{
                 padding: 5,
                 height: 40,
@@ -67,10 +78,10 @@ const UserProfile = () => {
               }}
             >
               <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="User_infoType_css">Gender</div>
+                <div className="User_infoType_css">{key}</div>
               </td>
               <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="User_details_css">Male</div>
+                <div className="User_details_css">{data[key]}</div>
               </td>
               <td style={{ padding: 5, height: 40, width: "40%" }}>
                 <div className="tick_with_status">
@@ -81,223 +92,17 @@ const UserProfile = () => {
                 </div>
               </td>
             </tr>
-            <tr
-              style={{
-                padding: 5,
-                height: 40,
-                width: "100%",
-                borderTop: "1px solid grey",
-              }}
-            >
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="User_infoType_css">Name</div>
-              </td>
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="User_details_css">Roni</div>
-              </td>
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="tick_with_status">
-                  <div className="tickMain">
-                    <img src={TickIcon} alt="tick" className="tickIcon" />
-                  </div>
-                  <div>Extracted</div>
-                </div>
-              </td>
-            </tr>
-            <tr
-              style={{
-                padding: 5,
-                height: 40,
-                width: "100%",
-                borderTop: "1px solid grey",
-              }}
-            >
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="User_infoType_css">Surname</div>
-              </td>
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="User_details_css">Oslo</div>
-              </td>
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="tick_with_status">
-                  <div className="tickMain">
-                    <img src={TickIcon} alt="tick" className="tickIcon" />
-                  </div>
-                  <div>Extracted</div>
-                </div>
-              </td>
-            </tr>
-            <tr
-              style={{
-                padding: 5,
-                height: 40,
-                width: "100%",
-                borderTop: "1px solid grey",
-              }}
-            >
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="User_infoType_css">Date of birth</div>
-              </td>
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="User_details_css">1990-3-25</div>
-              </td>
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="tick_with_status">
-                  <div className="tickMain">
-                    <img src={TickIcon} alt="tick" className="tickIcon" />
-                  </div>
-                  <div>Extracted</div>
-                </div>
-              </td>
-            </tr>
-            <tr
-              style={{
-                padding: 5,
-                height: 40,
-                width: "100%",
-                borderTop: "1px solid grey",
-              }}
-            >
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="User_infoType_css">Pin</div>
-              </td>
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="User_details_css">3241</div>
-              </td>
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="tick_with_status">
-                  <div className="tickMain">
-                    <img src={TickIcon} alt="tick" className="tickIcon" />
-                  </div>
-                  <div>Extracted</div>
-                </div>
-              </td>
-            </tr>
-            <tr
-              style={{
-                padding: 5,
-                height: 40,
-                width: "100%",
-                borderTop: "1px solid grey",
-              }}
-            >
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="User_infoType_css">Document no</div>
-              </td>
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="User_details_css">245758</div>
-              </td>
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="tick_with_status">
-                  <div className="tickMain">
-                    <img src={TickIcon} alt="tick" className="tickIcon" />
-                  </div>
-                  <div>Extracted</div>
-                </div>
-              </td>
-            </tr>
-            <tr
-              style={{
-                padding: 5,
-                height: 40,
-                width: "100%",
-                borderTop: "1px solid grey",
-              }}
-            >
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="User_infoType_css">Expiry Date</div>
-              </td>
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="User_details_css">2028-3-15</div>
-              </td>
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="tick_with_status">
-                  <div className="tickMain">
-                    <img src={TickIcon} alt="tick" className="tickIcon" />
-                  </div>
-                  <div>Extracted</div>
-                </div>
-              </td>
-            </tr>
-            <tr
-              style={{
-                padding: 5,
-                height: 40,
-                width: "100%",
-                borderTop: "1px solid grey",
-              }}
-            >
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="User_infoType_css">Contry of issue</div>
-              </td>
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="User_details_css">UK</div>
-              </td>
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="tick_with_status">
-                  <div className="tickMain">
-                    <img src={TickIcon} alt="tick" className="tickIcon" />
-                  </div>
-                  <div>Extracted</div>
-                </div>
-              </td>
-            </tr>
-            <tr
-              style={{
-                padding: 5,
-                height: 40,
-                width: "100%",
-                borderTop: "1px solid grey",
-              }}
-            >
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="User_infoType_css">Document Type</div>
-              </td>
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="User_details_css">Passport</div>
-              </td>
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="tick_with_status">
-                  <div className="tickMain">
-                    <img src={TickIcon} alt="tick" className="tickIcon" />
-                  </div>
-                  <div>Extracted</div>
-                </div>
-              </td>
-            </tr>
-            <tr
-              style={{
-                padding: 5,
-                height: 40,
-                width: "100%",
-                borderTop: "1px solid grey",
-                borderBottom: "1px solid grey",
-              }}
-            >
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="User_infoType_css">Nationality</div>
-              </td>
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="User_details_css">UK</div>
-              </td>
-              <td style={{ padding: 5, height: 40, width: "40%" }}>
-                <div className="tick_with_status">
-                  <div className="tickMain">
-                    <img src={TickIcon} alt="tick" className="tickIcon" />
-                  </div>
-                  <div>Extracted</div>
-                </div>
-              </td>
-            </tr>
+                )
+              })
+            }
+            
+           
           </tbody>
         </table>
         <div className="last_main_div">
           <td className="criminalRecord_last_div">Criminal Record</td>
           <div className="criminalRecord_details_last_td">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id
-            molestias ipsum dolorum facilis cupiditate, dicta assumenda,
-            officiis dolores voluptatem, sapiente maxime ? Suscipit voluptatum
-            nemo sit reprehenderit quibusdam ut?
+            
           </div>
         </div>
       </div>

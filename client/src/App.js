@@ -33,11 +33,11 @@ return(
         <Route path="/quicksearch" element={<QuickNameSearchPage />} />
         <Route path="/quickscan" element={<QuickDocumentScanPage />} />
         <Route path="/searchresult/:id" element={<QuickSearchResultPage/>} />
-        <Route path="/employeedetails" element={<EmployeeDetailsMainPage/>} />
-        <Route path="/employeesdetails" element={<EmployeeDetailsMainTwo/>} />
+        <Route path="/employeedetails/:id" element={<EmployeeDetailsMainPage/>} />
+        <Route path="/employeesdetails/:id" element={<EmployeeDetailsMainTwo/>} />
 
         <Route path="/emailverification/:id" element={<EmailVerification/>} />
-        <Route path="/multiselectform" element={<Multiselectform/>} />
+        <Route path="/multiselectform/:id" element={<Multiselectform/>} />
 
 
 

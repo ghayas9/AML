@@ -92,7 +92,7 @@ const getData = async()=>{
               load?<Loading/>:
               list.map((item,index) => {
                 return (
-                  <tr key={index} className="quicktablerow quicktableeven" onClick={() => navigate('/employeesdetails')}>
+                  <tr key={index} className="quicktablerow quicktableeven" onClick={() => navigate('/employeesdetails/'+item._id)}>
               <td className='tableTD'>
                 <img src={item.ScanData.outputface} alt="img" className="prsofile_imge_css" />
               </td>

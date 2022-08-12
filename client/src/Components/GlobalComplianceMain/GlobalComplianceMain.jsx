@@ -1,11 +1,13 @@
 import React from "react";
 import "../GlobalComplianceMain/GlobalComplianceMain.css";
 import Logo from "../../images/logo.png";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 
 const GlobalComplianceMain = () => {
   const navigate = useNavigate()
+
+  const { id }= useParams()
   
   return (
     <div className="Companyverification_main">
@@ -18,7 +20,7 @@ const GlobalComplianceMain = () => {
         <p>You have been invited to verify your identity in the GlobalCompliance platform by Test Company</p>
       </div>
       <div className="Identify_verification_btn_main">
-        <div className="identifyVerification_btn" onClick={() => navigate('/multiselectform')}>
+        <div className="identifyVerification_btn" onClick={() => navigate('/multiselectform/'+id)}>
             Identify Verification
         </div>
       </div>

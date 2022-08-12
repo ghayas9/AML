@@ -53,6 +53,7 @@ import { Player } from 'video-react';
 
 
 import axios from '../../config/axios'
+import { useParams } from "react-router-dom";
 
 
 const videoConstraints = {
@@ -61,6 +62,7 @@ const videoConstraints = {
 };
 
 const MultiSelectForm = () => {
+  const {id } = useParams()
   // API
   const [name,setName]=useState('')
   const [gender,setGender]= useState('')
@@ -103,7 +105,7 @@ const MultiSelectForm = () => {
     try{
       const res = await axios({
         method:'post',
-        url:'/company/emailverification/1',
+        url:'/company/emailverification/'+id,
         data:formdata,
         headers:{
           'Content-Type': 'multipart/form-data',
@@ -1412,7 +1414,8 @@ const MultiSelectForm = () => {
               </div>
               <div className="done_btn" onClick={
                 () => {
-                window?.close()
+                  ApiCall()
+                // window?.close()
                 }
                 }>
                 Done

@@ -39,12 +39,10 @@ const LogIn = (state = init , action) =>{
             // })
             const decoded = jwt_decode(token)
             state = {token,data:decoded}
-            console.log(state);
             }else{
                 return state
             }
        }
-       console.log(state);
         return state
     }
 }

@@ -22,7 +22,7 @@ const Table = ({data, header1, header2,header3  , header4,header5 ,header6 }) =>
             {
               data.map((item) => {
                 return (
-                  <tr className="tablerow tableeven" onClick={() => navigate('/employeedetails')}>
+                  <tr className="tablerow tableeven" onClick={() => navigate('/employeedetails/'+item._id)}>
               <td className='tableTD'>
                 <img src={item.profile} alt="img" className="prsofile_imge_css" />
               </td>
